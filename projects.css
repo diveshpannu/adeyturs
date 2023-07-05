@@ -146,3 +146,20 @@ body {
 #nav a:hover {
     color: #00eeff;
 }
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .item {
+    width: 100%;
+  }
+
+  .frame1,
+  .frame2,
+  .frame3 {
+    width: 100%;
+    height: 300px; /* Adjust the height as per your preference */
+  }
