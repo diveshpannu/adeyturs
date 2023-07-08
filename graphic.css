@@ -149,22 +149,16 @@ body {
 
 .main {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 20px;
-  }
+}
 
-  .item {
+.item {
     width: 100%;
-  }
+}
 
-  .frame1,
-  .frame2,
-  .frame3 {
-    width: 100%;
-    height: 300px; /* Adjust the height as per your preference */
-  }
 
-  /* Dark theme styles for games.html */
+/* Dark theme styles for games.html */
 
 /* Set body background color */
 body {
@@ -173,50 +167,80 @@ body {
 }
 
 /* Set heading styles */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: #fff;
 }
 
-        h1 {
-            text-align: center; /* Center the text */
-            margin-top: 100px; /* Add margin to the top of the text */
-            animation: pulseAnimation 2s infinite; /* Add animation to the text */
-            color: #bfff00; /* Set text color to blue */
-            font-size: 48px; /* Set font size */
-            text-transform: uppercase; /* Uppercase text */
-            font-family: 'Montserrat', sans-serif; /* Set custom font */
-            font-weight: bold; /* Set font weight to bold */
-            letter-spacing: 8px; /* Add letter spacing */
-        }
+h1 {
+    text-align: center;
+    /* Center the text */
+    margin-top: 100px;
+    /* Add margin to the top of the text */
+    animation: pulseAnimation 2s infinite;
+    /* Add animation to the text */
+    color: #bfff00;
+    /* Set text color to blue */
+    font-size: 48px;
+    /* Set font size */
+    text-transform: uppercase;
+    /* Uppercase text */
+    font-family: 'Montserrat', sans-serif;
+    /* Set custom font */
+    font-weight: bold;
+    /* Set font weight to bold */
+    letter-spacing: 8px;
+    /* Add letter spacing */
+}
 
 h2 {
-    text-align: center; /* Center the text */
-    margin-top: 100px; /* Add margin to the top of the text */
-    animation: rgbAnimation 5s infinite; /* Add animation to the text */
+    text-align: center;
+    /* Center the text */
+    margin-top: 100px;
+    /* Add margin to the top of the text */
+    animation: rgbAnimation 5s infinite;
+    /* Add animation to the text */
 }
 
 /* Define animation keyframes */
 @keyframes rgbAnimation {
     0% {
-        color: rgb(255, 0, 0); /* Start with red color */
+        color: rgb(255, 0, 0);
+        /* Start with red color */
     }
+
     50% {
-        color: rgb(0, 255, 0); /* Change to green color at 50% */
+        color: rgb(0, 255, 0);
+        /* Change to green color at 50% */
     }
+
     100% {
-        color: rgb(0, 0, 255); /* Change to blue color at 100% */
+        color: rgb(0, 0, 255);
+        /* Change to blue color at 100% */
     }
 }
 
 p {
-    text-align: center; /* Center the text */
-    font-size: 18px; /* Set font size */
-    color: #666; /* Set text color */
-    margin-top: 20px; /* Add margin to the top of the text */
-    max-width: 800px; /* Set maximum width for text */
-    margin-left: auto; /* Center the text horizontally */
-    margin-right: auto; /* Center the text horizontally */
-    line-height: 1.5; /* Set line height */
+    text-align: center;
+    /* Center the text */
+    font-size: 18px;
+    /* Set font size */
+    color: #666;
+    /* Set text color */
+    margin-top: 20px;
+    /* Add margin to the top of the text */
+    max-width: 800px;
+    /* Set maximum width for text */
+    margin-left: auto;
+    /* Center the text horizontally */
+    margin-right: auto;
+    /* Center the text horizontally */
+    line-height: 1.5;
+    /* Set line height */
 }
 
 /* Set link styles */
@@ -252,23 +276,34 @@ a:hover {
 }
 
 .play-button {
-    margin-top: 20px; /* Add margin to the top of the play button */
-    text-align: center; /* Center the play button */
+    margin-top: 20px;
+    /* Add margin to the top of the play button */
+    text-align: center;
+    /* Center the play button */
 }
 
 .play-button a {
-    display: inline-block; /* Display as inline block */
-    padding: 15px 30px; /* Add padding for button */
-    background-color: #007bff; /* Set background color */
-    color: #fff; /* Set text color */
-    font-size: 24px; /* Set font size */
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px; /* Add border radius */
-    transition: background-color 0.3s ease; /* Add transition effect */
+    display: inline-block;
+    /* Display as inline block */
+    padding: 15px 30px;
+    /* Add padding for button */
+    background-color: #007bff;
+    /* Set background color */
+    color: #fff;
+    /* Set text color */
+    font-size: 24px;
+    /* Set font size */
+    text-decoration: none;
+    /* Remove underline */
+    border-radius: 5px;
+    /* Add border radius */
+    transition: background-color 0.3s ease;
+    /* Add transition effect */
 }
 
 .play-button a:hover {
-    background-color: #0056b3; /* Change background color on hover */
+    background-color: #0056b3;
+    /* Change background color on hover */
 }
 
 
@@ -303,7 +338,8 @@ a:hover {
 /* Hide tabs after scrolling down */
 .header.hide {
     opacity: 0;
-    transition: opacity 0.5s ease-in-out; /* Add fade transition for opacity */
+    transition: opacity 0.5s ease-in-out;
+    /* Add fade transition for opacity */
 }
 
 /* Add transition delay for hiding tabs after scrolling */
@@ -318,10 +354,12 @@ a:hover {
 
 /* Set height for tabs content container */
 .tab-content {
-    min-height: calc(100vh - 48px); /* Subtract height of tabs from viewport height */
+    min-height: calc(100vh - 48px);
+    /* Subtract height of tabs from viewport height */
 }
 
 @keyframes bounce {
+
     0%,
     20%,
     50%,
@@ -329,9 +367,11 @@ a:hover {
     100% {
         transform: translateY(0);
     }
+
     40% {
         transform: translateY(-10px);
     }
+
     60% {
         transform: translateY(-5px);
     }
@@ -339,103 +379,130 @@ a:hover {
 
 /* Add styles for footer */
 footer {
-    text-align: center; /* Center align footer content */
-    margin-top: 50px; /* Add top margin */
+    text-align: center;
+    /* Center align footer content */
+    margin-top: 50px;
+    /* Add top margin */
 }
 
 footer h6 {
-    color: #777; /* Set text color to gray */
+    color: #777;
+    /* Set text color to gray */
 }
 
 body.scrolled::-webkit-scrollbar-thumb {
-    background-color: #00ccff; /* Use custom property for thumb color */
+    background-color: #00ccff;
+    /* Use custom property for thumb color */
 }
 
 body.scrolled::-webkit-scrollbar-track {
-    background-color: #ff0000; /* Use custom property for track color */
+    background-color: #ff0000;
+    /* Use custom property for track color */
 }
 
 body.scrolled::-webkit-scrollbar {
-    width: 5px; /* Set width of scroll bar */
+    width: 5px;
+    /* Set width of scroll bar */
 }
 
-        /* CSS for donation section */
-        .donation {
-            text-align: center; /* Center align the donation section */
-            margin-top: 50px; /* Add margin to the top of the donation section */
-        }
+/* CSS for donation section */
+.donation {
+    text-align: center;
+    /* Center align the donation section */
+    margin-top: 50px;
+    /* Add margin to the top of the donation section */
+}
 
-        .donation p {
-            font-size: 13px; /* Set font size */
-            color: #666; /* Set text color */
-            margin-bottom: 20px; /* Add margin to the bottom of the text */
-        }
+.donation p {
+    font-size: 13px;
+    /* Set font size */
+    color: #666;
+    /* Set text color */
+    margin-bottom: 20px;
+    /* Add margin to the bottom of the text */
+}
 
-        .donation a {
-            display: inline-block; /* Display as inline block */
-            padding: 15px 30px; /* Add padding for button */
-            background-color: #007bff; /* Set background color */
-            color: #fff; /* Set text color */
-            font-size: 10px; /* Set font size */
-            text-decoration: none; /* Remove underline */
-            border-radius: 10px; /* Add border radius */
-            transition: background-color 0.3s ease; /* Add transition effect */
-        }
+.donation a {
+    display: inline-block;
+    /* Display as inline block */
+    padding: 15px 30px;
+    /* Add padding for button */
+    background-color: #007bff;
+    /* Set background color */
+    color: #fff;
+    /* Set text color */
+    font-size: 10px;
+    /* Set font size */
+    text-decoration: none;
+    /* Remove underline */
+    border-radius: 10px;
+    /* Add border radius */
+    transition: background-color 0.3s ease;
+    /* Add transition effect */
+}
 
-        .donation a:hover {
-            background-color: #ff00f7; /* Change background color on hover */
-        }
+.donation a:hover {
+    background-color: #ff00f7;
+    /* Change background color on hover */
+}
 
-        #nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: #000;
-            opacity: 0.8;
-            z-index: 999;
-            transition: transform 0.3s ease;
-        }
-        
-        #nav ul {
-            display: flex;
-            justify-content: center;
-            list-style-type: none;
-            padding: 20px;
-        }
-        
-        #nav li {
-            margin-right: 20px;
-        }
-        
-        #nav a {
-            color: #fff;
-            text-decoration: none;
-            transition: color 0.3s ease-in-out;
-        }
-        
-        #nav a:hover {
-            color: #00eeff;
-        }
+#nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.8;
+    z-index: 999;
+    transition: transform 0.3s ease;
+}
+
+#nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 20px;
+}
+
+#nav li {
+    margin-right: 20px;
+}
+
+#nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+#nav a:hover {
+    color: #00eeff;
+}
+
 /* Disable right-click context menu */
 body {
-    -webkit-context-menu: none; /* Webkit */
-    -moz-context-menu: none; /* Mozilla */
-    -ms-context-menu: none; /* Microsoft */
+    -webkit-context-menu: none;
+    /* Webkit */
+    -moz-context-menu: none;
+    /* Mozilla */
+    -ms-context-menu: none;
+    /* Microsoft */
 }
+
 /* Disable text selection */
 body {
-    -webkit-user-select: none; /* Webkit */
-    -moz-user-select: none; /* Mozilla */
-    -ms-user-select: none; /* Microsoft */
+    -webkit-user-select: none;
+    /* Webkit */
+    -moz-user-select: none;
+    /* Mozilla */
+    -ms-user-select: none;
+    /* Microsoft */
     user-select: none;
 }
- 
+
 .image-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 28vh; /* Set the height of the container to occupy the full viewport height */
-  }  
-
-  
+    height: 28vh;
+    /* Set the height of the container to occupy the full viewport height */
+}
